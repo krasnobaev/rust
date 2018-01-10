@@ -1,0 +1,12 @@
+# ignore all files without extension https://stackoverflow.com/a/25592735
+*
+!*.*
+!*/
+
+# rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# MAC OS
+.DS_Store
