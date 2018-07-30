@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>WASM Example</title>
+</head>
+
+<body>
+  <div>
+    <h1>Web Assembly JavaScript Example</h1>
+  </div>
+
+
+  <script type='text/javascript'>
+    fetch('add1.wasm')
+    .then(response => response.arrayBuffer())
+    .then(bytes => WebAssembly.instantiate(bytes, {}))
+    .then(results => {
+      console.log(results.instance.exports.add_one(4));
+    });
+  </script>
+
+</body>
+
+</html>

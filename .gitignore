@@ -10,3 +10,5 @@ Cargo.lock
 
 # MAC OS
 .DS_Store
+
+.ipynb_checkpoints/

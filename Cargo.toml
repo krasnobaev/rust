@@ -1,0 +1,20 @@
+[package]
+name = "rust"
+version = "0.0.1"
+authors = ["Aleksey Krasnobaev <alekseykrasnobaev@gmail.com>"]
+
+[[bin]]
+name = "hi"
+path = "src/hi.rs"
+
+# [[bin]]
+# name = "hackerrank-0-hello-world"
+# path = "src/hackerrank/src/0-hello-world.rs"
+
+[[bin]]
+name = "hackerrank-1-data-types"
+path = "src/hackerrank/src/1-data-types.rs"
+
+[[bin]]
+name = "hackerrank-2-operators"
+path = "src/hackerrank/src/2-operators.rs"
