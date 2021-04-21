@@ -11,10 +11,52 @@ path = "src/hi.rs"
 # name = "hackerrank-0-hello-world"
 # path = "src/hackerrank/src/0-hello-world.rs"
 
-[[bin]]
-name = "hackerrank-1-data-types"
-path = "src/hackerrank/src/1-data-types.rs"
+# [[bin]]
+# name = "hackerrank-1-data-types"
+# path = "src/hackerrank/src/1-data-types.rs"
+
+# [[bin]]
+# name = "hackerrank-2-operators"
+# path = "src/hackerrank/src/2-operators.rs"
+
+# [[bin]]
+# name = "assembler_simple"
+# path = "src/codewars/assembler_simple.rs"
+
+# [[bin]]
+# name = "quicksort-1"
+# path = "src/hackerrank/algorithms/quicksort-1.rs"
+
+# [[bin]]
+# name = "quicksort-2"
+# path = "src/hackerrank/algorithms/quicksort-2.rs"
+
+# [[bin]]
+# name = "assembler_part2"
+# path = "src/codewars/assembler_part2.rs"
+
+# [[bin]]
+# name = "last_digit"
+# path = "src/codewars/last_digit.rs"
+
+# [[bin]]
+# name = "brainluck_interpreter"
+# path = "src/codewars/brainluck_interpreter.rs"
+
+# [[bin]]
+# name = "bool_to_word"
+# path = "src/codewars/kumite/bool_to_word.rs"
 
 [[bin]]
-name = "hackerrank-2-operators"
-path = "src/hackerrank/src/2-operators.rs"
+name = "interpreter"
+path = "src/codewars/1kyu/interpreter.rs"
+
+## exercism ##
+
+[[bin]]
+name = "leap"
+path = "src/exercism/leap/src/lib.rs"
+
+[[bin]]
+name = "raindrops"
+path = "src/exercism/raindrops/src/lib.rs"
