@@ -1,0 +1,25 @@
+[package]
+name = "hackerrank"
+version = "0.0.1"
+
+[[bin]]
+name = "algorithms"
+path = "src/algorithms/main.rs"
+
+[[bin]]
+name = "quicksort-1"
+path = "src/algorithms/quicksort-1.rs"
+
+[[bin]]
+name = "quicksort-2"
+path = "src/algorithms/quicksort-2.rs"
+
+[[bin]]
+name = "insertionsort-2"
+path = "src/algorithms/insertionsort-2.rs"
+
+# zzz
+
+[[bin]]
+name = "hackerrank-0-hello-world"
+path = "src/0-hello-world.rs"

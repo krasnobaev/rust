@@ -1,0 +1,27 @@
+[package]
+name = "codewars"
+version = "0.0.1"
+
+# [[bin]]
+# name = "assembler_simple"
+# path = "src/codewars/assembler_simple.rs"
+
+# [[bin]]
+# name = "assembler_part2"
+# path = "src/codewars/assembler_part2.rs"
+
+# [[bin]]
+# name = "last_digit"
+# path = "src/codewars/last_digit.rs"
+
+# [[bin]]
+# name = "brainluck_interpreter"
+# path = "src/codewars/brainluck_interpreter.rs"
+
+# [[bin]]
+# name = "bool_to_word"
+# path = "src/codewars/kumite/bool_to_word.rs"
+
+[[bin]]
+name = "interpreter"
+path = "src/codewars/1kyu/interpreter.rs"
