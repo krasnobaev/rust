@@ -8,12 +8,13 @@ impl Prime {
         Self { primes: vec![], count: 0 }
     }
 
-    fn is_divisible (self: &Self, candidate: u32) -> bool {
-        for i in 1..self.primes.len() {
-            if self.primes[i] > (candidate as f32).sqrt() as u32 { continue }
-            if candidate % self.primes[i] == 0 { return true }
-        }
-        return false
+    fn is_prime (self: &Self, candidate: u32) -> bool {
+        // let candidate_sqrt = (candidate as f32).sqrt() as u32;
+        // !self.primes.iter()
+        //     .filter(|&&x| x <= candidate_sqrt)
+        //     .any(|x| candidate % x == 0)
+        let m = (candidate as f32).sqrt() as u32;
+        !(2..m+1).any(|x| candidate % x == 0)
     }
 }
 
@@ -24,13 +25,11 @@ impl Iterator for Prime {
         let prime = match self.count {
             0 => 2,
             1 => 3,
-            _ => {
-                let mut candidate = self.primes[self.count - 1] + 2;
-                while self.is_divisible(candidate) {
-                    candidate += 2;
-                }
-                candidate
-            },
+            _ => (self.primes[self.count - 1] + 2..)
+                    .step_by(2)
+                    .filter(|&candidate| self.is_prime(candidate))
+                    .nth(0)
+                    .unwrap(),
         };
 
         self.primes.push(prime);
@@ -41,8 +40,6 @@ impl Iterator for Prime {
 
 pub fn nth(n: u32) -> u32 {
     Prime::new()
-        .into_iter()
-        .take(n as usize + 1)
         .nth(n as usize)
         .unwrap()
 }

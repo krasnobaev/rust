@@ -14,4 +14,4 @@ Cargo.lock
 .ipynb_checkpoints/
 .nyc_output/
 coverage
-framegraph.svg
+flamegraph.svg
